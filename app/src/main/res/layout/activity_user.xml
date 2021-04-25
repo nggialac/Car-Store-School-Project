@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.UserActivity">
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Thông tin người dùng"
+        android:textColor="#000"
+        android:textSize="30sp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvInfoUser"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="299dp"
+        android:text=""
+        android:textSize="25sp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+    <Button
+        android:id="@+id/btnChangeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_states"
+        android:text="Thay đổi thông tin" />
+
+    <Button
+        android:id="@+id/buttonDoiMK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_states"
+        android:layout_below="@+id/btnChangeInfo"
+        android:text="Đổi mật khẩu" />
+
+    <Button
+        android:id="@+id/btnSingout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_exit"
+        android:layout_below="@+id/buttonDoiMK"
+        android:text="Đăng xuất tài khoản" />
+
+
+</RelativeLayout>
+
+
+</LinearLayout>

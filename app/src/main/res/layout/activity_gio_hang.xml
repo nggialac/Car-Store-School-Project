@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvgioihang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#87D7FB"
+        android:layout_weight="0"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="Giỏ Hàng" />
+    <ListView
+        android:id="@+id/listCartItem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvThanhTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="Tổng tiền :" />
+
+    <Button
+        android:id="@+id/btnMuaThem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#94CBF6"
+        android:layout_weight="0"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp"
+        android:text="Tiếp tục mua hàng" />
+
+    <Button
+        android:id="@+id/btnThanhTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#94CBF6"
+        android:layout_weight="0"
+        android:textSize="25dp"
+        android:text="Thanh Toán" />
+
+</LinearLayout>

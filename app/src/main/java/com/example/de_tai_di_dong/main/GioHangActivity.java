@@ -81,6 +81,8 @@ public class GioHangActivity extends AppCompatActivity implements CarItemListene
             public void onResponse(Call<ArrayList<SanPham>> call, Response<ArrayList<SanPham>> response) {
                 assert response.body() != null;
                 int sl = response.body().size();
+                list_sp = new ArrayList<>();
+                tongtien = 0;
                 soluong = sl;
                 for (int i = 0; i < response.body().size(); i++) {
                     list_sp.add(response.body().get(i));
@@ -115,9 +117,10 @@ public class GioHangActivity extends AppCompatActivity implements CarItemListene
             @Override
             public void onResponse(Call<ResultLogin> call, Response<ResultLogin> response) {
                 assert response.body() != null;
-                if (list_sp.size() >= position)
-                    list_sp.remove(position);
-                adapterGioHang.notifyDataSetChanged();
+//                if (list_sp.size() >= position)
+//                    list_sp.remove(position);
+//                adapterGioHang.notifyDataSetChanged();
+                LaySpCart(idKH);
             }
 
             @Override

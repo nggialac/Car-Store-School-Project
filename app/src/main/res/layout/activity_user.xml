@@ -28,40 +28,14 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
-
-
-
-    <Button
-        android:id="@+id/btnChangeInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/button_states"
-        android:text="Thay đổi thông tin" />
-
-    <Button
-        android:id="@+id/buttonDoiMK"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_states"
-        android:layout_below="@+id/btnChangeInfo"
-        android:text="Đổi mật khẩu" />
+    android:orientation="horizontal"/>
 
     <Button
         android:id="@+id/btnSingout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_exit"
-        android:layout_below="@+id/buttonDoiMK"
+        android:layout_gravity="center"
         android:text="Đăng xuất tài khoản" />
-
-
-</RelativeLayout>
-
-
 </LinearLayout>

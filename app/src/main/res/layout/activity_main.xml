@@ -37,10 +37,25 @@
             android:text="Sản phẩm nổi bật"
             android:textColor="#000" />
 
+        <Spinner
+            android:id="@+id/spinnerMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+        </Spinner>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <ListView
             android:id="@+id/listSanPham"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 
     </LinearLayout>
     <com.google.android.material.navigation.NavigationView

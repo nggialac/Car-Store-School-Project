@@ -33,9 +33,9 @@ public class Orders {
 
     @SerializedName("CheckDate")
     @Expose
-    private int checkDate;
+    private String checkDate;
 
-    public Orders(int id, int userId, String buyingDay, String name, String phone, String email, String address, int totalPrice, int checkDate) {
+    public Orders(int id, int userId, String buyingDay, String name, String phone, String email, String address, int totalPrice, String checkDate) {
         Id = id;
         UserId = userId;
         BuyingDay = buyingDay;
@@ -111,11 +111,11 @@ public class Orders {
         this.totalPrice = totalPrice;
     }
 
-    public int getCheckDate() {
+    public String getCheckDate() {
         return checkDate;
     }
 
-    public void setCheckDate(int checkDate) {
+    public void setCheckDate(String checkDate) {
         this.checkDate = checkDate;
     }
 }

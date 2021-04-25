@@ -29,7 +29,7 @@ import retrofit2.Response;
 public class UserActivity extends AppCompatActivity {
         int idKH=0;
         TextView tvInfoUser;
-        Button btnChangeInfo , btnSingout, buttonDoiMK;
+        Button btnSingout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -147,9 +147,9 @@ public class UserActivity extends AppCompatActivity {
 
     private void setControl() {
         tvInfoUser =findViewById(R.id.tvInfoUser);
-        btnChangeInfo=findViewById(R.id.btnChangeInfo);
+        //btnChangeInfo=findViewById(R.id.btnChangeInfo);
         btnSingout= findViewById(R.id.btnSingout);
-        buttonDoiMK= findViewById(R.id.buttonDoiMK);
+        //buttonDoiMK= findViewById(R.id.buttonDoiMK);
 
     }
 }

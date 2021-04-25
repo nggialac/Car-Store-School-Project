@@ -10,21 +10,13 @@
         <item
             android:id="@+id/donhang"
             android:title="Đơn Hàng" />
-<!--        <item-->
-<!--            android:id="@+id/vang"-->
-<!--            android:icon="@drawable/daychuyen"-->
-<!--            android:title="Trang sức bằng vàng"-->
-<!--            app:showAsAction="never">-->
-<!--        </item>-->
-<!--        <item-->
-<!--            android:id="@+id/bạc"-->
-<!--            android:icon="@drawable/nhan"-->
-<!--            android:title="Trang sức bằng bạc"-->
-<!--            app:showAsAction="never">-->
-<!--        </item>-->
-<!--        <item-->
-<!--            android:id="@+id/cuoi"-->
-<!--            android:icon="@drawable/hoatai"-->
-<!--            android:title="Trang sức cưới " />-->
+
+        <item
+            android:id="@+id/themsanpham"
+            android:title="Thêm sản phẩm" />
+        <item
+            android:id="@+id/quanLy"
+            android:title="Quản Lý Sản Phẩm" />
+
     </group>
 </menu>

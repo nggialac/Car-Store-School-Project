@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-
         android:usesCleartextTraffic="true">
-
+        <activity android:name=".main.ActivitySuasanpham"></activity>
+        <activity android:name=".main.ActivityThemSanPham" />
         <activity android:name=".main.ThanhTienActivity" />
         <activity android:name=".main.UserActivity" />
         <activity android:name=".main.MainActivity">
@@ -28,7 +28,8 @@
         <activity android:name=".main.CT_HoaDonActivity" />
         <activity android:name=".main.GioHangActivity" />
         <activity android:name=".main.LoginActivity" />
-        <activity android:name=".main.StatisActivity"/>
+        <activity android:name=".main.StatisActivity" />
+        <activity android:name=".main.QLSPActivity" />
     </application>
 
 </manifest>

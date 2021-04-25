@@ -45,8 +45,8 @@ public class HoaDonAdapter extends BaseAdapter {
         EditText date;
         EditText phone;
         EditText totalPrice;
-        EditText address;
-        EditText note;
+        EditText checkDate;
+        EditText orderBy;
         ConstraintLayout listHD;
 
     }
@@ -61,8 +61,8 @@ public class HoaDonAdapter extends BaseAdapter {
             holder.date=view.findViewById(R.id.ngayHD);
             holder.phone=view.findViewById(R.id.phoneHD);
             holder.totalPrice=view.findViewById(R.id.totalPrice);
-            holder.address =view.findViewById(R.id.addressHD);
-            holder.note=view.findViewById(R.id.noteHD);
+            holder.checkDate =view.findViewById(R.id.editTextCheckDate);
+            //holder.orderBy=view.findViewById(R.id.edtOrderBy);
             holder.listHD=view.findViewById(R.id.listHD);
             view.setTag(holder);
         }else holder=(HoaDonAdapter.ViewHolder)view.getTag();
@@ -70,8 +70,8 @@ public class HoaDonAdapter extends BaseAdapter {
         holder.date.setText(orders.getBuyingDay()+"");
         holder.name.setText(orders.getName());
         holder.phone.setText(orders.getPhone());
-        holder.address.setText(orders.getAddress());
-        holder.note.setText(orders.getCheckDate() + "");
+        holder.checkDate.setText(orders.getCheckDate()+"");
+        //holder.orderBy.setText(orders.getUserId() + "");
         holder.totalPrice.setText(orders.getTotalPrice()+"");
         holder.listHD.setOnClickListener(new View.OnClickListener() {
             @Override
